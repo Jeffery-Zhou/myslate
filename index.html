@@ -296,7 +296,7 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-1e815a84.png" class="logo" alt="" />
+      <img src="images/logo-24598c66.png" class="logo" alt="" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="ruby">ruby</a>
@@ -309,7 +309,10 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+            <a href="#the-mythical-man-machine" class="toc-h1 toc-link" data-title="The Mythical Man-Machine">The Mythical Man-Machine</a>
+          </li>
+          <li>
+            <a href="#usage-of-slate" class="toc-h1 toc-link" data-title="Usage of Slate">Usage of Slate</a>
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
@@ -340,12 +343,88 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id='the-mythical-man-machine'>The Mythical Man-Machine</h1>
+<p>Welcome The Mythical Man-Machine.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p><strong>Robot learning</strong> is a research field at the intersection of <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> and <a href="https://en.wikipedia.org/wiki/Robotics">robotics</a>. It studies techniques allowing a robot to acquire novel skills or adapt to its environment through learning algorithms. The embodiment of the robot, situated in a physical embedding, provides at the same time specific difficulties (e.g. high-dimensionality, real time constraints for collecting data and learning) and opportunities for guiding the learning process (e.g. sensorimotor synergies, motor primitives).</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>Example of skills that are targeted by learning algorithms include sensorimotor skills such as locomotion, grasping, active <a href="https://en.wikipedia.org/wiki/Object_recognition">object categorization</a>, as well as interactive skills such as joint manipulation of an object with a human peer, and linguistic skills such as the grounded and situated <a href="https://en.wikipedia.org/wiki/Natural-language_understanding">meaning of human language</a>. Learning can happen either through autonomous self-exploration or through guidance from a human teacher, like for example in robot learning by imitation.</p>
+
+<p>Robot learning can be closely related to <a href="https://en.wikipedia.org/wiki/Adaptive_control">adaptive control</a>, <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">reinforcement learning</a> as well as <a href="https://en.wikipedia.org/wiki/Developmental_robotics">developmental robotics</a> which considers the problem of autonomous lifelong acquisition of repertoires of skills. While <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> is frequently used by <a href="https://en.wikipedia.org/wiki/Computer_vision">computer vision</a> algorithms employed in the context of robotics, these applications are usually not referred to as &quot;robot learning&quot;.</p>
+<h1 id='usage-of-slate'>Usage of Slate</h1>
+<p><strong>Running Slate</strong> can be conducted in to two ways:</p>
+
+<ol>
+<li>Server Mode (the MD processed for development)</li>
+</ol>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>   bundle <span class="nb">exec </span>middleman server
+</code></pre></div>
+<ol>
+<li>Build Mode (just generate html files)</li>
+</ol>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>   bundle <span class="nb">exec </span>middleman build
+</code></pre></div>
+<p>The docs will be depolyed at <a href="http://localhost:4567/">http://localhost:4567</a></p>
+
+<p><strong>Deploy the Stalte on Github</strong></p>
+
+<ol>
+<li><p>Make sure you&#39;re working on a fork in your own account, not our original repo: <code>git remote show origin</code>.</p></li>
+<li><p>Commit your changes to the markdown source: <code>git commit -a -m &quot;Update index.md&quot;</code></p></li>
+<li><p>Push the <em>markdown source</em> changes to GitHub: <code>git push</code></p></li>
+<li><p>Run <code>./deploy.sh</code></p></li>
+</ol>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>   <span class="nb">cd</span> ~/slate/source
+   git add index.html.md
+   git commit <span class="nt">-a</span> <span class="nt">-m</span> <span class="s2">"Update index.md"</span>
+   git push
+   ../deploy.sh
+</code></pre></div>
+<p><strong>Markdown Syntax</strong></p>
+
+<ul>
+<li>Header (Note that only level 1 and 2 headers will appear in the table of contents.)</li>
+</ul>
+<div class="highlight"><pre class="highlight markdown tab-markdown"><code><span class="gh"># Level 1 Header</span>
+<span class="gu">## Level 2 Header</span>
+<span class="gu">### Level 3 Header</span>
+</code></pre></div>
+<ul>
+<li><p>Paragraph Text (Make sure the lines above and below your paragraph are empty.)</p></li>
+<li><p>Code Samples</p></li>
+</ul>
+<div class="highlight"><pre class="highlight plaintext"><code>print("this is a code sample")
+</code></pre></div>
+<ul>
+<li>Code Annotation</li>
+</ul>
+
+<blockquote>
+<p>This code annotation</p>
+</blockquote>
+
+<ul>
+<li>Formatted Text</li>
+</ul>
+<div class="highlight"><pre class="highlight markdown tab-markdown"><code>This text is <span class="gs">**bold**</span>, this is <span class="ge">*italic*</span>, this is an <span class="sb">`inline code block`</span>.
+</code></pre></div>
+<ul>
+<li>Links</li>
+</ul>
+<div class="highlight"><pre class="highlight plaintext"><code>This is an [internal link](#error-code-definitions), this is an [external link](http://google.com).
+</code></pre></div>
+<ul>
+<li>Notes &amp; Warnings</li>
+</ul>
+<div class="highlight"><pre class="highlight html tab-html"><code><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"notice"</span><span class="nt">&gt;</span>
+    You must replace meowmeowmeow with your personal API key.
+<span class="nt">&lt;/aside&gt;</span>
+</code></pre></div>
+<p>Use <code>class=&quot;notice&quot;</code> for blue notes, <code>class=&quot;warning&quot;</code> for red warnings, and <code>class=&quot;success&quot;</code> for green notes.</p>
+
+<aside class="notice">
+    You must replace meowmeowmeow with your personal API key.
+</aside>
 <h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
