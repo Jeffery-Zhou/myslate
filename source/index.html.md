@@ -5,14 +5,14 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   - ruby
   - python
-  - javascript
-
+ 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+- <a href='https://sites.google.com/view/jeff2phd'> To be a phd(Google Site) </a>
+- <a href='#'> Github </a>
+- <a href='#'>Powered by Slate</a>
 
 includes:
-  - errors
+  - imitationLearning
 
 search: true
 
@@ -47,6 +47,8 @@ Robot learning can be closely related to [adaptive control](https://en.wikipedia
 
 The docs will be depolyed at [http://localhost:4567](http://localhost:4567/)
 
+
+
 **Deploy the Stalte on Github**
 
 1. Make sure you're working on a fork in your own account, not our original repo: `git remote show origin`.
@@ -65,7 +67,14 @@ The docs will be depolyed at [http://localhost:4567](http://localhost:4567/)
    ../deploy.sh
    ```
 
-   
+   <aside class="warning">
+       Sometimes the port need to be killed by following shell code:
+   </aside>
+
+```shell
+lsof -i tcp:4567
+kill -9 [pid]
+```
 
 
 
@@ -120,6 +129,58 @@ Use `class="notice"` for blue notes, `class="warning"` for red warnings, and `cl
 <aside class="notice">
     You must replace meowmeowmeow with your personal API key.
 </aside>
+
+
+
+# Robotics
+
+Learning Materials:
+
+[REINFORCEMENT LEARNING AND OPTIMAL CONTROL](http://web.mit.edu/dimitrib/www/RLbook.html)
+
+
+
+# 3D Deep Learning
+
+## Learning Note
+
+
+
+### Courses:
+
+Games101 [Modern Graphics](https://www.bilibili.com/video/BV1X7411F744?p=10)  闫令琪 (UCSD)
+
+CVPR Tutorial: [3D Deep Learning](https://www.youtube.com/watch?v=8CenT_4HWyY) Hao Su (UCSD)
+
+将门创投：[点云上的深度学习及其在三维场景理解中的应用](https://www.youtube.com/watch?v=Ew24Rac8eYE)
+
+
+
+## Tool & Env.
+
+Open3D Documentations: http://open3d.org/html/tutorial/Basic/icp_registration.html
+
+Point Cloud Processing:
+
+- https://blog.bricsys.com/free-point-cloud-software/
+
+Point Cloud Labeling:
+
+- [Semantic-segmentation-editor](https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor)
+
+[SAPIEN](https://sapien.ucsd.edu/) A SimulAted Part-based Interactive ENvironment
+
+
+
+# Tools
+
+[Youtube Video download](https://www.y2mate.com/youtube/8CenT_4HWyY)
+
+
+
+# Community Connections
+
+
 
 # Authentication
 
