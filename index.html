@@ -288,7 +288,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -301,7 +301,6 @@
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="ruby">ruby</a>
               <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -313,6 +312,26 @@
           </li>
           <li>
             <a href="#usage-of-slate" class="toc-h1 toc-link" data-title="Usage of Slate">Usage of Slate</a>
+          </li>
+          <li>
+            <a href="#robotics" class="toc-h1 toc-link" data-title="Robotics">Robotics</a>
+          </li>
+          <li>
+            <a href="#3d-deep-learning" class="toc-h1 toc-link" data-title="3D Deep Learning">3D Deep Learning</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#learning-note" class="toc-h2 toc-link" data-title="Learning Note">Learning Note</a>
+                  </li>
+                  <li>
+                    <a href="#tool-amp-env" class="toc-h2 toc-link" data-title="Tool &amp; Env.">Tool &amp; Env.</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#tools" class="toc-h1 toc-link" data-title="Tools">Tools</a>
+          </li>
+          <li>
+            <a href="#community-connections" class="toc-h1 toc-link" data-title="Community Connections">Community Connections</a>
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
@@ -332,12 +351,21 @@
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#imitation-learning" class="toc-h1 toc-link" data-title="Imitation Learning">Imitation Learning</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#learning-note-il" class="toc-h2 toc-link" data-title="Learning Note(IL)">Learning Note(IL)</a>
+                  </li>
+                  <li>
+                    <a href="#tool-amp-env-il" class="toc-h2 toc-link" data-title="Tool &amp; Env.(IL)">Tool &amp; Env.(IL)</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://sites.google.com/view/jeff2phd'> To be a phd(Google Site) </a></li>
+            <li><a href='#'> Github </a></li>
+            <li><a href='#'>Powered by Slate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -379,6 +407,12 @@
    git commit <span class="nt">-a</span> <span class="nt">-m</span> <span class="s2">"Update index.md"</span>
    git push
    ../deploy.sh
+</code></pre></div>
+<p><aside class="warning">
+       Sometimes the port need to be killed by following shell code:
+   </aside></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>lsof <span class="nt">-i</span> tcp:4567
+<span class="nb">kill</span> <span class="nt">-9</span> <span class="o">[</span>pid]
 </code></pre></div>
 <p><strong>Markdown Syntax</strong></p>
 
@@ -425,7 +459,35 @@
 <aside class="notice">
     You must replace meowmeowmeow with your personal API key.
 </aside>
-<h1 id='authentication'>Authentication</h1>
+<h1 id='robotics'>Robotics</h1>
+<p>Learning Materials:</p>
+
+<p><a href="http://web.mit.edu/dimitrib/www/RLbook.html">REINFORCEMENT LEARNING AND OPTIMAL CONTROL</a></p>
+<h1 id='3d-deep-learning'>3D Deep Learning</h1><h2 id='learning-note'>Learning Note</h2><h3 id='courses'>Courses:</h3>
+<p>Games101 <a href="https://www.bilibili.com/video/BV1X7411F744?p=10">Modern Graphics</a>  闫令琪 (UCSD)</p>
+
+<p>CVPR Tutorial: <a href="https://www.youtube.com/watch?v=8CenT_4HWyY">3D Deep Learning</a> Hao Su (UCSD)</p>
+
+<p>将门创投：<a href="https://www.youtube.com/watch?v=Ew24Rac8eYE">点云上的深度学习及其在三维场景理解中的应用</a></p>
+<h2 id='tool-amp-env'>Tool &amp; Env.</h2>
+<p>Open3D Documentations: http://open3d.org/html/tutorial/Basic/icp_registration.html</p>
+
+<p>Point Cloud Processing:</p>
+
+<ul>
+<li>https://blog.bricsys.com/free-point-cloud-software/</li>
+</ul>
+
+<p>Point Cloud Labeling:</p>
+
+<ul>
+<li><a href="https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor">Semantic-segmentation-editor</a></li>
+</ul>
+
+<p><a href="https://sapien.ucsd.edu/">SAPIEN</a> A SimulAted Part-based Interactive ENvironment</p>
+<h1 id='tools'>Tools</h1>
+<p><a href="https://www.y2mate.com/youtube/8CenT_4HWyY">Youtube Video download</a></p>
+<h1 id='community-connections'>Community Connections</h1><h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
@@ -598,64 +660,8 @@ Remember — a happy kitten is an authenticated kitten!
 <td>The ID of the kitten to delete</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
-</tr>
-</tbody></table>
+<h1 id='imitation-learning'>Imitation Learning</h1><h2 id='learning-note-il'>Learning Note(IL)</h2><h2 id='tool-amp-env-il'>Tool &amp; Env.(IL)</h2><h3 id='sapien'>SAPIEN</h3>
+<p>A SimulAted Part-based Interactive ENvironment</p>
 
       </div>
       <div class="dark-box">
@@ -663,7 +669,6 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
                 <a href="#" data-language-name="shell">shell</a>
                 <a href="#" data-language-name="ruby">ruby</a>
                 <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
